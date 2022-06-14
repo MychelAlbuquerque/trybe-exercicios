@@ -15,3 +15,28 @@ body{
 #photo{
     border-radius: 30px 80px;
 }
+
+.item{
+    text-align: center;
+    padding: 5px;
+    max-width: 60px;
+    
+    border-radius:10px;
+    margin-top: 10px;
+    
+}
+#first_li{
+    color: white;
+    font-weight: bold;
+    background-color: #FF671D;
+}
+#second_li{
+    color: white;
+    font-weight: bold;
+    background-color: #3492CB;
+}
+#third_li{
+    color: white;
+    font-weight: bold;
+    background-color: #EAD41C;
+}
