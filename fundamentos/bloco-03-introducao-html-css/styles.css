@@ -1,0 +1,91 @@
+body{
+    background-color: #c1cfda;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.button{
+    background-color: #18314f;
+    color: #e8f1f2;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+#photo{
+    border-radius: 30px 80px;
+    box-shadow: 0 0 10px;
+}
+
+.item{
+    text-align: center;
+    padding: 5px;
+    max-width: 75px;
+    border-radius:10px;
+    margin-top: 10px;
+    
+}
+#first_li{
+    color: white;
+    font-weight: bold;
+    background-color: #FF671D;
+}
+#second_li{
+    color: white;
+    font-weight: bold;
+    background-color: #3492CB;
+}
+#third_li{
+    color: white;
+    font-weight: bold;
+    background-color: #EAD41C;
+}
+#fourth_li{
+    color: white;
+    font-weight: bold;
+    background-color: #4F9640;
+    
+}
+#fifth_li{
+    color: white;
+    font-weight: bold;
+    background-color: #6E43A3;
+
+}
+
+#box-name{
+    
+    text-align: center;
+}
+#know-me{
+    
+    margin-left: 33%;
+        
+
+}
+.inline-box{
+    display: inline-block;
+}
+#description{
+    text-align: center;
+}
+
+.container{
+    display: block;
+    margin: auto;
+   
+    max-width:450px;
+    text-align: center;
+}
+
+#box-skills{
+    
+    display: inline-block;
+    margin: auto;
+    
+}
+#box-buttons{
+    margin-top: 50px;
+}
