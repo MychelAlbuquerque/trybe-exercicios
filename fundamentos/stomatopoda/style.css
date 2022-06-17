@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    display: inline-block;
+    background-color: #595959;
+    width: 500px;
+    height: 30px;
+    
+    border: 5px solid red;   
+}
+nav ul{
+    
+    height: 20px;
+    vertical-align: middle;
+    border: 5px solid blue;
+}
+nav li{
+    
+    display: inline-block;
+    width: 100px;
+        
+}
+nav a{
+    
+    color: #3772FF;
+    text-decoration: none;
+}
