@@ -32,6 +32,37 @@ nav a{
     text-align: center;
     margin-top:2%;
 }
-#photo-one{
-    max-width: 500px
+/* ------ Final Header ------ */
+
+
+#article-one{
+    margin-top:1%;
+    display: inline-block;
+    border: 1px solid blue;
 }
+#photo-one{
+    max-width: 500px;
+    display: inline-block;
+}
+span{
+    display: inline-block;
+    max-width:500px;
+    text-align: justify;
+    vertical-align: top;
+}
+#article-two{
+    margin-left: 190px;
+    width: 900px;
+    margin-top:3%;
+    display: inline-block;
+    border: 1px solid blue;
+}
+#photo-two{
+    width:190px
+}
+#photo-three{
+    width:190px
+}
+
+
+
