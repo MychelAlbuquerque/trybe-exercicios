@@ -7,6 +7,7 @@
 body{
     max-width:1280px;
     margin: auto;
+    border: 1px solid red
 }
 nav{
     margin: 1% auto;
@@ -30,4 +31,7 @@ nav a{
 #title{
     text-align: center;
     margin-top:2%;
+}
+#photo-one{
+    max-width: 500px
 }
