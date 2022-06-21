@@ -4,7 +4,7 @@ let maior = 'Números iguais';
 
 
 console.log('-------------------------');
-console.log('# Programa 2 #');
+console.log('# Programa 6 #');
 console.log('-------------------------');
 if (a!=b){
   if (a>b) {
