@@ -1,4 +1,4 @@
-let player = 'damA';
+let player = 'damAa';
 player = player.toUpperCase();
 
 
@@ -24,5 +24,6 @@ switch (player){
     Normal: 1 casa para frente.
     Captura: 1 diagonal.`)
     break;  
+  default: console.log('Error');
 }
 
