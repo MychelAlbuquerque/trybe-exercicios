@@ -66,11 +66,11 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     futureText('Espero estar trabalhando com tecnologia e feliz!')
 
     //Exercicio 2
-    let mainContent = document.getElementsByClassName("main-content");
+    let mainContent = document.getElementsByClassName("main-content")[0];
     function yellowGreen(color){
-      mainContent.backgroundColor = color;
+      mainContent.style.backgroundColor = color;
     }
-    yellowGreen(rgb(76,164,109));
+    yellowGreen(('rgb(76,164,109)'));
 
 
   </script>
