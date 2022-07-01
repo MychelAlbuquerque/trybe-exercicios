@@ -39,7 +39,7 @@
   </header>
   <main class="main-content">
     <section class="center-content">
-      <p>Texto padrão do nosso site</p>
+      <p id="defaultText">Texto padrão do nosso site</p>
       <p id="future">-----</p>
       <p>Trybe</p>
     </section>
@@ -90,6 +90,13 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
       title.innerText = text;
     }
     fixesTitle('Exercício 5.1 - Javascript');
+
+    //Exercicio 5 
+    let defaultText = document.querySelector('#defaultText');
+    function upperCase(text) {
+      text.innerText = text.innerText.toUpperCase();
+    }
+    upperCase(defaultText);
 
 
 
