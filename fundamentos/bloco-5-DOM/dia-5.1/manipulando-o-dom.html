@@ -98,6 +98,15 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     }
     upperCase(defaultText);
 
+    //Exercicio 6 
+    let tgName = document.querySelectorAll('p');
+    function toConsole(tag) {
+      for (let index of tgName) {
+        console.log(index.innerText);
+      }
+    }
+    toConsole(tgName);
+
 
 
   </script>
