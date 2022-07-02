@@ -25,9 +25,17 @@ let decemberDaysList =
 let days = document.getElementById('days');
 for(let index in decemberDaysList) {
   let day = document.createElement('li');
-  day.innerHTML = decemberDaysList[index];
+  day.innerText = decemberDaysList[index];
+  if( decemberDaysList[index] == 24 || decemberDaysList[index] == 25 || decemberDaysList[index] == 31) {
+    day.className = 'day holiday';
+  } else if (decemberDaysList[index] == 4 || decemberDaysList[index] == 11 || decemberDaysList[index] == 18 || decemberDaysList[index] == 25){
+    day.className = 'day friday';
+  } else day.className = 'day';
+  
   days.appendChild(day);
+
 }
+
 
 // Exercicio 2
 function criaBotao(lblBotao, id){
