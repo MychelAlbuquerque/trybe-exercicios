@@ -63,3 +63,13 @@ function corFeriado() {
   }
 }
 
+//Exercicio 4
+function criaBotao(lblBotao, id) {
+  let botao = document.createElement('button');
+  botao.innerHTML = lblBotao;
+  botao.id = id;
+  let buttonsContainer = document.querySelector('.buttons-container');
+  buttonsContainer.appendChild(botao);
+}
+criaBotao('Sexta-feira', 'btn-friday');
+
