@@ -26,11 +26,18 @@ let days = document.getElementById('days');
 for (let index in decemberDaysList) {
   let day = document.createElement('li');
   day.innerText = decemberDaysList[index];
-  if (decemberDaysList[index] == 24 || decemberDaysList[index] == 25 || decemberDaysList[index] == 31) {
-    day.className = 'day holiday';
-  } else if (decemberDaysList[index] == 4 || decemberDaysList[index] == 11 || decemberDaysList[index] == 18 || decemberDaysList[index] == 25) {
-    day.className = 'day friday';
-  } else day.className = 'day';
+  day.className = 'day';
+  if (decemberDaysList[index] == 24 ||
+    decemberDaysList[index] == 25 ||
+    decemberDaysList[index] == 31) {
+    day.classList.add('holiday');
+  }
+  if (decemberDaysList[index] == 4 ||
+    decemberDaysList[index] == 11 ||
+    decemberDaysList[index] == 18 ||
+    decemberDaysList[index] == 25) {
+    day.classList.add('friday');
+  }
 
   days.appendChild(day);
 
@@ -53,7 +60,6 @@ botao.addEventListener('click', corFeriado)
 
 function corFeriado() {
   let day = document.querySelectorAll('.holiday');
-  console.log(day);
   for (let index in day) {
     if (day[index].style.backgroundColor != 'blue') {
       day[index].style.backgroundColor = 'blue';
@@ -72,4 +78,27 @@ function criaBotao(lblBotao, id) {
   buttonsContainer.appendChild(botao);
 }
 criaBotao('Sexta-feira', 'btn-friday');
+
+//Exercicio 5
+let botaoFriday = document.getElementById('btn-friday');
+botaoFriday.addEventListener('click', mudaFriday)
+
+let bkpFriday = [];
+
+let friday = document.querySelectorAll('.friday');
+for (let index in friday) {
+  bkpFriday.push(friday[index].innerText);
+}
+
+function mudaFriday() {
+
+  for (let index in friday) {
+    if (friday[index].innerHTML !== 'Sextou') {
+      friday[index].innerText = 'Sextou';
+    } else {
+      friday[index].innerText = bkpFriday[index];
+    }
+  }
+}
+
 
