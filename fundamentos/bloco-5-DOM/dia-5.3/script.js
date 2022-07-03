@@ -121,7 +121,7 @@ function zoomOut(event) {
 // Exercicio 7
 let myTasks = document.querySelector('.my-tasks');
 
-function criaTarefa(nome){
+function criaTarefa(nome) {
   let task = document.createElement('span');
   task.innerText = nome;
   myTasks.appendChild(task)
@@ -132,7 +132,7 @@ criaTarefa('Nova tarefa');
 // Exercicio 8
 let divCor = document.createElement('div');
 
-function corLegenda (cor){
+function corLegenda(cor) {
   divCor.className = 'task';
   divCor.style.backgroundColor = (cor);
   myTasks.appendChild(divCor);
@@ -142,12 +142,28 @@ corLegenda('blue');
 
 // Exercicio 9 
 
-divCor.addEventListener('click',selectTask);
+divCor.addEventListener('click', selectTask);
 
-function selectTask (){
-  if(divCor.classList.contains('selected')) {
+function selectTask() {
+  if (divCor.classList.contains('selected')) {
     divCor.classList.remove('selected')
   } else {
     divCor.classList.add('selected');
+  }
+}
+
+// Exercicio 10
+let todoDia = document.getElementsByClassName('day');
+let selecionadas = document.getElementsByClassName('selected');
+
+for (let index in todoDia) {
+  todoDia[index].addEventListener('click', taskDay);
+
+}
+function taskDay(event) {
+  if (event.target.style.backgroundColor !== selecionadas[0].style.backgroundColor) {
+    event.target.style.backgroundColor = selecionadas[0].style.backgroundColor;
+  } else {
+    event.target.style.backgroundColor = 'rgb(238, 238, 238)';
   }
 }
