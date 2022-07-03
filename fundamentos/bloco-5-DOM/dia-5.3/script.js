@@ -167,3 +167,11 @@ function taskDay(event) {
     event.target.style.backgroundColor = 'rgb(238, 238, 238)';
   }
 }
+
+// Exercicio Bonus
+let btnAdd = document.getElementById('btn-add');
+btnAdd.addEventListener('click', compromisso);
+
+function compromisso(){
+  
+}
