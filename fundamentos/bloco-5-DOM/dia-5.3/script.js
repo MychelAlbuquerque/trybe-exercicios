@@ -105,8 +105,8 @@ function mudaFriday() {
 // Exercicio 6
 let dias = document.querySelectorAll('.day');
 for (let index in dias) {
-  dias[index].addEventListener('mouseover', zoomIn);
-  dias[index].addEventListener('mouseleave', zoomOut);
+  //dias[index].addEventListener('mouseover', zoomIn);
+  //dias[index].addEventListener('mouseleave', zoomOut);
 }
 
 
@@ -119,3 +119,13 @@ function zoomOut(event) {
 }
 
 // Exercicio 7
+
+function criaTarefa(nome){
+  let task = document.createElement('span');
+  let myTasks = document.querySelector('.my-tasks');
+  task.innerText = nome;
+  myTasks.appendChild(task)
+}
+
+criaTarefa('Nova tarefa');
+
