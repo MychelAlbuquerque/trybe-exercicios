@@ -117,3 +117,5 @@ function zoomIn(event) {
 function zoomOut(event) {
   event.target.classList.remove('diaZoom');
 }
+
+// Exercicio 7
