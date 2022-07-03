@@ -130,9 +130,9 @@ function criaTarefa(nome){
 criaTarefa('Nova tarefa');
 
 // Exercicio 8
+let divCor = document.createElement('div');
 
 function corLegenda (cor){
-  let divCor = document.createElement('div');
   divCor.className = 'task';
   divCor.style.backgroundColor = (cor);
   myTasks.appendChild(divCor);
@@ -140,3 +140,14 @@ function corLegenda (cor){
 
 corLegenda('blue');
 
+// Exercicio 9 
+
+divCor.addEventListener('click',selectTask);
+
+function selectTask (){
+  if(divCor.classList.contains('selected')) {
+    divCor.classList.remove('selected')
+  } else {
+    divCor.classList.add('selected');
+  }
+}

@@ -93,6 +93,10 @@ label {
   width: 35px;
 }
 
+.my-tasks div.selected {
+  border: 5px solid red;
+}
+
 .my-tasks div:hover {
   height: 45px;
   width: 45px;
