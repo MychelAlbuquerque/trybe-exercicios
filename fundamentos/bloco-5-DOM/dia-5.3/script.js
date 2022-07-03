@@ -119,13 +119,24 @@ function zoomOut(event) {
 }
 
 // Exercicio 7
+let myTasks = document.querySelector('.my-tasks');
 
 function criaTarefa(nome){
   let task = document.createElement('span');
-  let myTasks = document.querySelector('.my-tasks');
   task.innerText = nome;
   myTasks.appendChild(task)
 }
 
 criaTarefa('Nova tarefa');
+
+// Exercicio 8
+
+function corLegenda (cor){
+  let divCor = document.createElement('div');
+  divCor.className = 'task';
+  divCor.style.backgroundColor = (cor);
+  myTasks.appendChild(divCor);
+}
+
+corLegenda('blue');
 
