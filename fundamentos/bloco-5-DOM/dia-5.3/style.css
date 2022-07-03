@@ -37,6 +37,11 @@ button {
   width: 13.6%;
 }
 
+#days .diaZoom {
+  font-size: 30px;
+  background-color: lightgreen !important;
+}
+
 .input-container {
   width: 49%;
   height: 100px;

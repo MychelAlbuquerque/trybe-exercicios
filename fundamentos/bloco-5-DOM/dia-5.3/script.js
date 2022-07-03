@@ -102,3 +102,18 @@ function mudaFriday() {
 }
 
 
+// Exercicio 6
+let dias = document.querySelectorAll('.day');
+for (let index in dias) {
+  dias[index].addEventListener('mouseover', zoomIn);
+  dias[index].addEventListener('mouseleave', zoomOut);
+}
+
+
+function zoomIn(event) {
+  event.target.classList.add('diaZoom');
+}
+
+function zoomOut(event) {
+  event.target.classList.remove('diaZoom');
+}
