@@ -1,6 +1,19 @@
 body{
   font-family:Arial, Helvetica, sans-serif
 }
+form{
+  
+}
 fieldset{
   display: inline-block;
+}
+button{
+  width: 100px;
+  height: 30px;
+  margin-left: 15px;
+}
+#submit{
+  width: 100px;
+  height: 30px;
+  margin-left: 15px;
 }

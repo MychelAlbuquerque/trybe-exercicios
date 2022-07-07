@@ -12,22 +12,23 @@
     
     <fieldset>
       <label for="Nome">Nome:</label>
-      <input type="text" name="Nome"><br><br>
+      <input type="text" name="Nome" minlength="10" maxlength="40"><br><br>
 
       <label for="Email">Email:</label>
-      <input type="email" name="Email"><br><br>
+      <input type="email" name="Email" minlength="10" maxlength="50"><br><br>
 
+      <p>Destino preferido:</p>
       <input type="radio" name="opcao" id="">
-      <label for="opcao">Opção 1</label>
+      <label for="opcao">Campo</label>
       <input type="radio" name="opcao" id="">
-      <label for="opcao">Opção 2</label>
+      <label for="opcao">Cidade</label>
       <input type="radio" name="opcao" id="">
-      <label for="opcao">Opção 3</label>
+      <label for="opcao">Praia</label>
       <input type="radio" name="opcao" id="">
-      <label for="opcao">Opção 4</label><br><br>
+      <label for="opcao">Montanhas</label><br><br>
 
       <label for="textBox">Espaço para digitar a resposta:</label><br>
-      <input type="text" name="textBox" id=""><br><br>
+      <input type="text" name="textBox" id="textBox" maxlength="500"><br><br>
 
       <label for="data">Data:</label>
       <input type="date" name="data" id=""><br><br>
@@ -38,6 +39,9 @@
       <input type="checkbox" name="check2" id="">
 
     </fieldset>
+    <br><br> 
+    <input type="submit" name="" id="submit" value="Enviar"></input>
+    <button>Apagar</button>
 
 
   </form>
