@@ -21,10 +21,23 @@
 // }
 // ordena(oddsAndEvens);
 
- const fatorial = (num) => {
-   for(let index=num-1; index > 0; index-=1){
-     num *= index; 
-     console.log(num);
-   }
- } 
- fatorial(4)
+
+// Exercicio 1 parte 2
+//  const fatorial = (num) => {
+//    for(let index=num-1; index > 0; index-=1){
+//      num *= index; 
+//      console.log(num);
+//    }
+//  } 
+//  fatorial(4)
+
+
+// Exercicio 1 parte 2
+const word ='Antônio foi no banheiro e não sabemos o que aconteceu'
+let array =[];
+const splitSentence = (sentence) => {
+  array = sentence.split(' ');
+  array = array.sort();
+  console.log(array[0])
+}
+splitSentence(word)
