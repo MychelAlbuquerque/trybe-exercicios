@@ -11,9 +11,20 @@
 
 // testingScope(false);
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-const ordena = (array) => {
-  array = array.sort((a, b) => a - b);
-  console.log(`Os números ${array} se encontram ordenados de forma crescente!"`);
-}
-ordena(oddsAndEvens);
+
+
+//Exercicio 2
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const ordena = (array) => {
+//   array = array.sort((a, b) => a - b);
+//   console.log(`Os números ${array} se encontram ordenados de forma crescente!"`);
+// }
+// ordena(oddsAndEvens);
+
+ const fatorial = (num) => {
+   for(let index=num-1; index > 0; index-=1){
+     num *= index; 
+     console.log(num);
+   }
+ } 
+ fatorial(4)
