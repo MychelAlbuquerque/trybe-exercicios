@@ -41,3 +41,15 @@
 //   console.log(array[0])
 // }
 // splitSentence(word)
+
+//Exercicio 4 parte 2
+const tryber = (nome) => `Tryber ${nome} aqui!`
+const hab = (outra) => {
+  const skills = ['JS', 'Css', 'Html'];
+  console.log(`${outra}
+Minhas três habilidades são:
+  - ${skills[0]}
+  - ${skills[1]}
+  - ${skills[2]}`)
+}
+hab(tryber('mychel'));
