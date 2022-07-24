@@ -20,4 +20,6 @@ const newEmployees = (callback) => {
   return employees;
 };
 
-console.log(newEmployees(criaFunc));
+// console.log(newEmployees(criaFunc));
+
+
