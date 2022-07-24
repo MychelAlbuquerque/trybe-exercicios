@@ -22,4 +22,19 @@ const newEmployees = (callback) => {
 
 // console.log(newEmployees(criaFunc));
 
+// Exercicio 2 
 
+const sorteio = (number, random) => {
+  let result = 0
+  random === number ? result = true : result = false;
+  console.log(result)
+  return result
+}
+
+const hof = (number, sorteio) => {
+  const random = (Math.floor(Math.random() * (5 - 1 + 1)) + 1);
+  console.log(random);
+  if (sorteio(number, random)) return 'Parabéns você ganhou';
+  return 'Tente novamente';
+}
+console.log(hof(3, sorteio));
