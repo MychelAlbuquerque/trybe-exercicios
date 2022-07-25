@@ -66,4 +66,6 @@ let newArray = books.map((item) => ({
   age: item.releaseYear - item.author.birthYear,
   author: item.author.name,
 }))
+newArray.sort((a,b) => a.age < b.age ? -1 : 1);
 console.log(newArray);
+
