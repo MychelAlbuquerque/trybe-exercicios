@@ -62,8 +62,8 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-
-console.log(books.map((item) => {
-  return `${${item.name} - ${item.genre} - ${item.author.name}}`
+let newArray = books.map((item) => ({
+  age: item.releaseYear - item.author.birthYear,
+  author: item.author.name,
 }))
-
+console.log(newArray);
