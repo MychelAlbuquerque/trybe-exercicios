@@ -63,6 +63,7 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-console.log(books.map((item) => `${item.name} - ${item.genre} - ${item.author.name}`
-))
+console.log(books.map((item) => {
+  return `${${item.name} - ${item.genre} - ${item.author.name}}`
+}))
 
