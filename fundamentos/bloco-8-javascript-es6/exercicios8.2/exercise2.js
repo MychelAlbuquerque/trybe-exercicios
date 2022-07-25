@@ -63,10 +63,10 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-let counter = 0;
+let counter = books[0].name.length;
 const result = books.forEach((item) => {
   let size = item.name.length;
-  size > counter && (counter = size);
+  size < counter && (counter = size);
 });
 
 console.log(counter);
